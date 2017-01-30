@@ -1,11 +1,19 @@
-div {
+.div-square {
     height:100px;
     width:100px;
     display: inline-block;
 }
 
+.bingo {
+    background-color: pink;
+}
+
 #red {
     background-color:#FF0000;
+}
+
+#ost {
+    background-color:blue;
 }
 
 #blue {
