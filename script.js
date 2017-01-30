@@ -1,18 +1,30 @@
 $(document).ready(function() {
-   $('div').mouseenter(function() {
-       $(this).animate({
-           height: '+=10px'
-       });
-   });
-   $('div').mouseleave(function() {
-       $(this).animate({
-           height: '-=10px'
-       }); 
-   });
-   $('div').click(function() {
-       $(this).toggle(1000);
+   $('#toogle-create').click(function(){
+    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
    });
    
-   $( "#datepicker444" ).datepicker();
+   $('#toogle-signin').click(function(){
+    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+   });
+   
+   $('#logon').click(function(){
+       var user = $('#name').val();
+       var pw = $('#pw').val();
+       console.log('user', user);
+       console.log('pw', pw);
+        if(user === 'ljb' && pw === 'ost'){
+            alert('U the king');
+        } else{
+            alert('U not him! Please gief Lars!!')
+        }
+   });
+
+   $('#forgot').click(function(){
+       alert('u forgetttttted itte');
+   });
+
+   $('#create').click(function(){
+       alert('u cannot create a user.. Muahhahahah');
+   });
    
 });

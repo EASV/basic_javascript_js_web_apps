@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
-        <script type="text/javascript" src="script.js"></script>
-    </head>
-    <body>
-        <div class="div-square" id="red"></div>
-        <div class="div-square" id="blue"></div>
-        <div class="div-square" id="yellow"></div>
-        <div class="div-square" id="green"></div>
 
-        <p>Date: <input type="text" id="datepicker444"></p>
-    </body>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form">
+                <input type="text" placeholder="name" />
+                <input type="password" placeholder="password"/>
+                <input type="text" placeholder="email address" />
+                <button id="create">create</button>
+                <p id="toogle-signin" class="message">Already registered? <a>Sign In</a></p>
+            </form>
+            <form class="login-form">
+                <input type="text" placeholder="username" id="name" />
+                <input type="password" placeholder="password"  id="pw"/>
+                <button id="logon">login</button>
+                <p id="toogle-create" class="message">Not registered? <a >Create an account</a></p>
+                <p class="message">forgot password? <a id="forgot">Forgot my password</a></p>
+            </form>
+        </div>
+    </div>
+
+</body>
+
 </html>
