@@ -61,6 +61,15 @@ $(document).ready(function () {
                 for(i=0; i<localUsers.length; i++){
                     $("<li class=\"message\"><a >"+localUsers[i].name+"</a></li>").appendTo(userList);
                 }
+
+
+                /*$.ajax({
+                    url: "http://rest-service.guides.spring.io/greeting"
+                }).then(function (data) {
+                    console.log('data', data);
+                    $('.greeting-id').append(data.id);
+                    $('.greeting-content').append(data.content);
+                });*/
             }
            
         } else {
