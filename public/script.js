@@ -23,7 +23,7 @@ $(document).ready(function () {
         }
 
     });
-
+    
     $('#logout').click(function () {
         localStorage.setItem("loggedInUser", null);
         logInCheck();
